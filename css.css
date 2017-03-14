@@ -1,0 +1,579 @@
+/*блок korotkiy poisk*/
+
+#menu_kor {
+    background: #f7f7f7;
+    border: 1px solid #d1d1d1;
+    margin: 0 20px 20px 20px;
+    padding: 14px 15px 30px;
+}
+
+.otstup {
+    margin-bottom: 10px;
+}
+
+p.zag-red {
+    color: #eb2327;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.zag-red > img {
+    padding-bottom: 4px;
+}
+
+.vibor_vzr {
+    width: 30px;
+    text-align: center;
+}
+
+.btns {
+    -moz-user-select: none;
+    background-image: none;
+    background-color: #fff;
+    border: 1px solid #d8d8d8;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 11px;
+    padding-left: 24px;
+    /*	padding-right: 5px;*/
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    color: #242525;
+    text-decoration: none;
+}
+
+.btns:hover {
+    text-decoration: none;
+}
+
+.arr {
+    background: #e4e4e4;
+    width: 8px;
+    height: 5px;
+    padding: 12px;
+    margin-left: 50px;
+}
+
+.input-group .form-control {
+    float: left;
+    height: 45px;
+    margin-bottom: 0;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    border-radius: 0;
+}
+
+.input-group-addon {
+    background-color: #e4e4e4;
+    color: #555555;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1;
+    padding: 6px 12px;
+    text-align: center;
+    border-radius: 0;
+}
+
+.vib_reb,
+.vib_reb_m,
+.vib_reb2,
+.vib_reb2_m {
+    display: inline-block;
+}
+
+.deti_2 {
+    padding-left: 2px;
+    padding-top: 23px;
+}
+
+span.num_red,
+.num_red2,
+.active_r {
+    color: #eb2327;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    vertical-align: middle;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+span.num_black,
+span.num_black2 {
+    color: #676767;
+    font-size: 15px;
+    font-weight: bold;
+    vertical-align: middle;
+    padding: 0 5px 0 5px;
+}
+
+.itog {
+    color: #676767;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+#select_reb {
+    height: 200px;
+    width: 55px;
+    background: #f6f6f6;
+    box-shadow: 1px 1px 18px rgba(133, 133, 133, .5);
+    position: absolute;
+    top: -100px;
+    left: 20px;
+    cursor: pointer;
+    display: none;
+    z-index: 100;
+}
+
+#select_reb > p {
+    color: #676767;
+    font-size: 24px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+#select_reb p:hover {
+    color: #eb2327 !important;
+    font-size: 24px;
+    font-weight: bold;
+    /*	padding-left: 10px;*/
+    cursor: pointer;
+}
+
+.clik,
+.numb_child {
+    cursor: pointer;
+}
+
+.numb_child_inp {
+    width: 20px;
+    height: 30px;
+}
+
+#vozrast_reb {
+    background: #f6f6f6 none repeat scroll 0 0;
+    box-shadow: 1px 1px 18px rgba(133, 133, 133, 0.5);
+    left: 150px;
+    position: absolute;
+    top: -100px;
+    width: 150px;
+    display: none;
+    z-index: 100;
+}
+
+#vozrast_reb::after {
+    content: '';
+    position: absolute;
+    /* Абсолютное позиционирование */
+    left: 150px;
+    bottom: 140px;
+    /* Положение треугольника */
+    border: 10px solid transparent;
+    /* Прозрачные границы */
+    border-left: 10px solid #f6f6f6;
+    /* Добавляем треугольник */
+}
+
+#vozrast_reb > p {
+    color: #676767;
+    font-size: 14px;
+    padding-top: 10px;
+    text-align: left;
+    padding: 10px 10px 5px 10px;
+}
+
+#vozrast_reb > p >span {
+    border-radius: 4px;
+    border: 1px solid #858585;
+    padding: 10px;
+}
+
+.divider {
+    border-bottom: 1px solid #e4e4e4;
+    height: 1px;
+    width: 90%;
+    margin: 10px;
+    overflow: hidden;
+}
+
+
+/*выбор количества взрослых*/
+
+#vib_vzrosliy {
+    height: 200px;
+    width: 55px;
+    background: #f6f6f6;
+    box-shadow: 1px 1px 18px rgba(133, 133, 133, .5);
+    position: absolute;
+    top: -100px;
+    left: -10px;
+    cursor: pointer;
+    display: none;
+    z-index: 100;
+}
+
+#vib_vzrosliy > p {
+    color: #676767;
+    font-size: 24px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+#vib_vzrosliy p:hover {
+    color: #eb2327 !important;
+    font-size: 24px;
+    font-weight: bold;
+    /*	padding-left: 10px;*/
+    cursor: pointer;
+}
+
+.clik_vibor,
+.numb_vzr {
+    cursor: pointer;
+}
+
+.numb_vzr_inp {
+    width: 20px;
+    height: 30px;
+}
+
+
+/**/
+
+.left_otstup {
+    margin-left: -12px;
+}
+
+.right_otstup {
+    margin-left: 12px;
+}
+
+.but {
+    color: #368fbe !important;
+    border: 3px solid #368fbe;
+    border-radius: 3px;
+    margin: 5px 30px 5px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center !important;
+    cursor: pointer;
+}
+
+.btn_poisk {
+    width: 220px;
+    height: 50px;
+    background: #eb2327;
+    border-bottom: 3px solid #b00004;
+    border-radius: 4px;
+    text-align: center !important;
+    padding-top: 5px;
+    margin-top: -46px;
+    /*bottom: 43px;*/
+    position: relative;
+    right: 15px;
+}
+
+.btn_poisk > a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
+    font size: 24px;
+    letter-spacing: 2px;
+}
+
+.btn_poisk > a:hover {
+    color: #f6f6f6;
+    text-transform: uppercase;
+    font-weight: 800;
+    font size: 24px;
+    letter-spacing: 2px;
+}
+
+.rasch_poisk_2 {
+    display: none;
+}
+
+.rasch_poisk p,
+.rasch_poisk_2 p {
+    color: #368fbe;
+    font-size: 18px;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+    width: 21%;
+    margin: 0 auto;
+}
+
+
+/*конец блока korotkiy poisk*/
+
+.wid_block select {
+    height: 42px;
+}
+
+
+/*блок polniy poisk*/
+
+#menu_polnoe {
+    background: #f7f7f7;
+    border: 1px solid #d1d1d1;
+    margin: 20px;
+    padding: 20px;
+    display: none;
+}
+
+#menu_polnoe .row {
+    margin: 0 0 15px 0;
+}
+
+#but_poisk_full {
+    display: none;
+}
+
+.colors_1 {
+    margin-bottom: 10px;
+    /*	background:#E4E4E4;*/
+}
+
+.colors_2 {
+    margin-top: 10px;
+    /*	background:#cccccc;*/
+}
+
+.pole_1 {
+    margin: 20px 0 -10px -7px;
+}
+
+.pole_2 {
+    margin: 2px 0 -10px -6px;
+}
+
+.pole_3 {
+    margin: 0 0 20px -6px;
+}
+
+.pole_4 {
+    margin: 10px 0 5px -8px;
+}
+
+.row {
+    position: relative;
+}
+
+.btns-s {
+    -moz-user-select: none;
+    background-image: none;
+    background-color: #fff;
+    border: 1px solid #d8d8d8;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 11px;
+    padding-left: 24px;
+    /*    text-align: center;*/
+    vertical-align: middle;
+    white-space: nowrap;
+    color: #242525;
+    text-decoration: none;
+}
+
+.btns-s:hover {
+    text-decoration: none;
+}
+
+.arrow_new {
+    background: #e4e4e4;
+    height: 43px;
+    margin-left: 120px;
+    padding: 11px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+}
+
+.input-group .form-control {
+    float: left;
+    height: 43px;
+    margin-bottom: 0;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    border-radius: 0;
+}
+
+.input-group-addon {
+    background-color: #e4e4e4;
+    color: #555555;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1;
+    padding: 6px 12px;
+    text-align: center;
+    border-radius: 0;
+}
+
+label {
+    font-weight: 400;
+}
+
+.chek {
+    padding-left: 15px;
+    font-size: 14px;
+}
+
+.width_all {
+    width: 97px;
+}
+
+.chek-s,
+.chek-s2 {
+    font-size: 14px;
+    padding-left: 1px;
+    display: inline;
+}
+
+.vertical_cell {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 13px;
+    padding-top: 7px;
+}
+
+.dividers {
+    border-bottom: 1px solid #e4e4e4;
+    width: 70%;
+}
+
+.chek_option,
+.chek_option_eat {
+    padding-left: 20px;
+}
+
+.chek_option label,
+.chek_option_eat label {
+    font-size: 14px;
+    color: #676767;
+}
+
+.checkbox {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 9px;
+    position: relative;
+}
+
+.wid_block {
+    width: 100%
+}
+
+.btns-ss {
+    -moz-user-select: none;
+    background-image: none;
+    background-color: #fff;
+    border: 1px solid #d8d8d8;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    /*    text-align: center;*/
+    vertical-align: middle;
+    white-space: nowrap;
+    color: #242525;
+    text-decoration: none;
+}
+
+.btns-ss:hover {
+    text-decoration: none;
+}
+
+.minus {
+    margin-left: -25px;
+    margin-right: 10px;
+    padding: 11px 10px;
+    cursor: pointer;
+}
+
+.minus2 {
+    cursor: pointer;
+    margin-left: -25px;
+    margin-right: 10px;
+    padding: 12px 10px;
+}
+
+.plus {
+    margin-left: 10px;
+    margin-right: 0px;
+    padding: 11px 10px;
+    cursor: pointer;
+}
+
+.plus2 {
+    margin-left: 10px;
+    margin-right: 0px;
+    padding: 12px 10px;
+    cursor: pointer;
+}
+
+.plus,
+.minus {
+    background: #e4e4e4;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.plus2,
+.minus2 {
+    background: #e4e4e4;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.count_night {
+    margin: 0;
+    padding: 15px;
+}
+
+.stoimost_one {
+    display: inline-block;
+    display: -moz-inline-box;
+    margin-top: 3px;
+}
+
+.otst {
+    margin-bottom: 100px;
+}
+
+#text_ot,
+#text_do {
+    height: 40px;
+    padding-left: 15px;
+    width: 100px;
+}
+
+
+/*конец блока korotkiy poisk*/
